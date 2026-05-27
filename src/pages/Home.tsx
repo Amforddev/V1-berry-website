@@ -37,12 +37,17 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
   return (
     <div id="page-home" className="spa-page">
       <section className="hero">
+        <svg className="hero-decor d1" width="56" height="56"><use href="#sticker-star"/></svg>
+        <svg className="hero-decor d2" width="48" height="48"><use href="#sticker-spark"/></svg>
+        <svg className="hero-decor d3" width="50" height="50"><use href="#sticker-heart"/></svg>
+        <svg className="hero-decor d4" width="40" height="50"><use href="#sticker-fire"/></svg>
+
         <div className="wrap hero-grid">
           <div className="reveal">
             <h1>
               Earn <span className="it">Berries</span><br/>
               for things you <span className="underline">already do
-                <svg viewBox="0 0 200 16" preserveAspectRatio="none"><path d="M2 12 Q50 2 100 8 T198 6" stroke="var(--indigo)" strokeWidth="4" fill="none" strokeLinecap="round"/></svg>
+                <svg viewBox="0 0 200 16" preserveAspectRatio="none"><path d="M2 12 Q50 2 100 8 T198 6" stroke="#FFF275" strokeWidth="4" fill="none" strokeLinecap="round"/></svg>
               </span>.
             </h1>
             <p className="lede">Answer quick honest surveys. Stack Berry tokens. Cash out to your bank, top up airtime & data, or enter raffles for bigger prizes. <strong style={{ color: 'var(--ink)' }}>That's it — no fluff.</strong></p>
@@ -188,6 +193,9 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
       <section style={{ paddingBottom: '80px' }}>
         <div className="wrap">
           <div className="cta-card reveal" id="cta">
+            <svg className="deco-mascot" width="120" height="130"><use href="#mascot"/></svg>
+            <svg className="deco-coin" width="80" height="80"><use href="#coin"/></svg>
+
             <h2>Ready to earn your <span className="it">first 500</span>?</h2>
             <p>Free to join. First 500 Berries land in your wallet the moment you sign up. Cash out, redeem, play — your call.</p>
             <div className="cta-actions">

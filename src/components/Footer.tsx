@@ -4,7 +4,7 @@ export default function Footer({ navigate }: { navigate: (page: string, anchor?:
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h6><svg width="34" height="34"><use href="#logo-berry-mascot"/></svg> Berry by Rivabit</h6>
+            <h6><svg width="34" height="34"><use href="#coin"/></svg> Berry by Rivabit</h6>
             <p>Take surveys. Earn Berry tokens. Cash out to your bank, top up airtime & data, or enter raffles. That's it — no tricks, no fine print.</p>
           </div>
           <div className="footer-col">
