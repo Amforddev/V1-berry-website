@@ -48,7 +48,7 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
                 <svg viewBox="0 0 200 16" preserveAspectRatio="none"><path d="M2 12 Q50 2 100 8 T198 6" stroke="#FFF275" strokeWidth="4" fill="none" strokeLinecap="round"/></svg>
               </span>.
             </h1>
-            <p className="lede">Answer quick honest surveys. Stack Berry tokens. Cash out to your bank, top up airtime & data, or enter raffles for bigger prizes. <strong style={{ color: 'var(--ink)' }}>That's it — no fluff.</strong></p>
+            <p className="lede">Answer quick honest surveys. Stack Berries. Cash out to your bank, top up airtime & data, or enter raffles for bigger prizes. <strong style={{ color: 'var(--ink)' }}>That's it — no fluff.</strong></p>
             <div className="hero-actions">
               <a href="#cta" className="btn btn-primary" data-ripple onClick={(e) => { e.preventDefault(); navigate('home', 'cta'); }}>
                 Start earning free
@@ -59,18 +59,7 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
                 Watch demo · 60s
               </a>
             </div>
-            <div className="hero-trust">
-              <div className="avatar-stack">
-                <div className="av" style={{ background: 'var(--yellow)', borderColor: 'var(--paper)' }}>A</div>
-                <div className="av" style={{ background: 'var(--lime)', borderColor: 'var(--paper)' }}>T</div>
-                <div className="av" style={{ background: 'var(--pink)', borderColor: 'var(--paper)' }}>C</div>
-                <div className="av" style={{ background: 'var(--sky)', borderColor: 'var(--paper)' }}>+</div>
-              </div>
-              <div>
-                <div className="stars">★★★★★ <strong style={{ color: 'var(--ink)' }}>4.9</strong></div>
-                <div className="meta"><strong>50,000+</strong> <span>earning every day</span></div>
-              </div>
-            </div>
+
           </div>
 
           <div className="hero-dash reveal d2">
@@ -137,7 +126,7 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
               <div className="step-num">02</div>
               <svg className="icon-art"><use href="#art-stack"/></svg>
               <h3>Earn Berries</h3>
-              <p>Tokens land in your wallet instantly. No "pending", no surprise rejections. What you see is what you earned.</p>
+              <p>Berries land in your wallet instantly. No "pending", no surprise rejections. What you see is what you earned.</p>
             </div>
             <div className="how-card reveal d3">
               <div className="step-num">03</div>

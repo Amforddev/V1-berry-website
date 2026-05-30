@@ -38,7 +38,7 @@ export function About() {
             <h3>Our story</h3>
             <p>Berry started with a question: <strong>why are brands spending billions on consumer research while the people whose opinions they want never see a Naira of it?</strong></p>
             <p>So we built a platform that flips the model. Real people answer honest surveys. Brands get sharp, verified insights. Everybody gets paid.</p>
-            <p>Today, over 50,000 Nigerians earn Berry tokens every day — cash that lands instantly in their wallets.</p>
+            <p>Today, over 50,000 Nigerians earn Berries every day — cash that lands instantly in their wallets.</p>
           </div>
           <div className="about-card reveal d1">
             <div className="stat-big">50,000+</div>
