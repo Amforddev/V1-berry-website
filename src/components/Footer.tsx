@@ -4,7 +4,7 @@ export default function Footer({ navigate }: { navigate: (page: string, anchor?:
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h6><svg width="34" height="34"><use href="#coin"/></svg> Berry by Rivabit</h6>
+            <h6><svg style={{ width: '150px', height: '50px', display: 'block' }} aria-label="Berry Logo"><use href="#berry-logo-white"/></svg></h6>
             <p>Take surveys. Earn Berry tokens. Cash out to your bank, top up airtime & data, or enter raffles. That's it — no tricks, no fine print.</p>
           </div>
           <div className="footer-col">
@@ -35,7 +35,7 @@ export default function Footer({ navigate }: { navigate: (page: string, anchor?:
           </div>
         </div>
         <div className="footer-base">
-          <span>&copy; 2026 Berry by Rivabit · Made in Lagos with ♥</span>
+          <span>&copy; 2026 Berry by Rivabit</span>
           <div className="social-icons">
             <a href="#" aria-label="X"><svg width="16" height="16"><use href="#s-x"/></svg></a>
             <a href="#" aria-label="Instagram"><svg width="16" height="16"><use href="#s-ig"/></svg></a>

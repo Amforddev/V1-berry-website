@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { FloatingBackground } from '../components/FloatingBerries';
 
 export default function Home({ navigate }: { navigate: (page: string, anchor?: string) => void }) {
   const [bal, setBal] = useState(3593);
@@ -36,11 +37,8 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
 
   return (
     <div id="page-home" className="spa-page">
+      <FloatingBackground />
       <section className="hero">
-        <svg className="hero-decor d1" width="56" height="56"><use href="#sticker-star"/></svg>
-        <svg className="hero-decor d2" width="48" height="48"><use href="#sticker-spark"/></svg>
-        <svg className="hero-decor d3" width="50" height="50"><use href="#sticker-heart"/></svg>
-        <svg className="hero-decor d4" width="40" height="50"><use href="#sticker-fire"/></svg>
 
         <div className="wrap hero-grid">
           <div className="reveal">
@@ -193,18 +191,16 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
       <section style={{ paddingBottom: '80px' }}>
         <div className="wrap">
           <div className="cta-card reveal" id="cta">
-            <svg className="deco-mascot" width="120" height="130"><use href="#mascot"/></svg>
-            <svg className="deco-coin" width="80" height="80"><use href="#coin"/></svg>
 
             <h2>Ready to earn your <span className="it">first 500</span>?</h2>
             <p>Free to join. First 500 Berries land in your wallet the moment you sign up. Cash out, redeem, play — your call.</p>
             <div className="cta-actions">
               <a href="#" className="btn btn-primary" data-ripple style={{ padding: '18px 32px', fontSize: '16px' }} onClick={(e) => e.preventDefault()}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.94-3.08.5-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.5C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
                 App Store
               </a>
               <a href="#" className="btn btn-ghost" data-ripple style={{ padding: '18px 32px', fontSize: '16px' }} onClick={(e) => e.preventDefault()}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5V3.5c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85c-.5-.25-.84-.76-.84-1.35z"/></svg>
+                <svg width="16" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
                 Google Play
               </a>
             </div>

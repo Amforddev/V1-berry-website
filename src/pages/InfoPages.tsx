@@ -70,7 +70,7 @@ export function About() {
               <p>No spam. No 50-question marathons. Most Berry surveys take under three minutes — and they're written by humans who care.</p>
             </div>
             <div className="value-card reveal d3">
-              <div className="icon-wrap"><svg width="26" height="26"><use href="#sticker-heart"/></svg></div>
+              <div className="icon-wrap"><svg width="26" height="26"><use href="#sticker-lock"/></svg></div>
               <h4>Privacy by default</h4>
               <p>Brands see aggregate insights, never your identity. Your data is yours; we just borrow your honest take.</p>
             </div>
@@ -129,19 +129,19 @@ export function Contact() {
               <div className="ic-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5440FF" strokeWidth="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7 L12 13 L21 7"/></svg></div>
               <h4>Email us directly</h4>
               <p>For wallet, withdrawal &amp; account questions.</p>
-              <a href="mailto:hello@berry.rivabit.com">hello@berry.rivabit.com</a>
+              <a href="mailto:support@rivabit.com">support@rivabit.com</a>
             </div>
             <div className="contact-card reveal d2">
               <div className="ic-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5440FF" strokeWidth="1.8"><path d="M5 4 C5 3 6 3 7 3 L9 3 C10 3 10 4 11 6 L9 8 C10 12 12 14 16 15 L18 13 C20 14 21 14 21 15 L21 17 C21 18 21 19 20 19 C12 19 5 12 5 4 Z"/></svg></div>
               <h4>Phone & WhatsApp</h4>
               <p>9am – 6pm WAT, Monday to Friday.</p>
-              <a href="tel:+2348000000000">+234 800 000 0000</a>
+              <a href="tel:+2349021251531">+234 902 125 1531</a>
             </div>
             <div className="contact-card reveal d3">
               <div className="ic-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5440FF" strokeWidth="1.8"><path d="M12 22 C 7 16 4 12 4 8 A 8 8 0 0 1 20 8 C 20 12 17 16 12 22 Z"/><circle cx="12" cy="8" r="2.5"/></svg></div>
               <h4>Our HQ</h4>
               <p>Drop by during business hours.</p>
-              <p style={{ marginTop: '6px' }}><strong>Rivabit Labs</strong><br/>14 Adeola Hopewell Street<br/>Victoria Island, Lagos · Nigeria</p>
+              <p style={{ marginTop: '6px' }}><strong>Rivabit Labs</strong><br/>30 Adisa Akintoye, Ketu<br/>Lagos, Nigeria</p>
             </div>
           </div>
         </div>

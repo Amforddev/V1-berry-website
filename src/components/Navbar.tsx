@@ -12,8 +12,7 @@ export default function Navbar({ navigate }: { navigate: (page: string, anchor?:
   return (
     <nav className="topnav" id="topnav">
       <a href="#" className="nav-brand" onClick={(e) => { e.preventDefault(); handleNav('home'); }}>
-        <svg width="32" height="32"><use href="#coin"/></svg>
-        <span>berry</span>
+        <svg style={{ width: '130px', height: '43px', display: 'block' }} aria-label="Berry Logo"><use href="#berry-logo-white"/></svg>
       </a>
 
       {/* Desktop Links */}
