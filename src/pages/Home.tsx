@@ -138,45 +138,6 @@ export default function Home({ navigate }: { navigate: (page: string, anchor?: s
         </div>
       </section>
 
-      <section id="voices">
-        <div className="wrap">
-          <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> What earners say</div>
-            <h2 className="section-title">Real people. <span className="orange-text">Real money.</span></h2>
-          </div>
-
-          <div className="testimonials-grid">
-            <div className="testimonial-card reveal d1">
-              <svg className="corner-coin" width="40" height="40"><use href="#coin"/></svg>
-              <div className="stars">★★★★★</div>
-              <p className="quote">"Made ₦12,000 my first month — for opinions I'd give freely anyway. The chat surveys are weirdly fun."</p>
-              <div className="who">
-                <div className="av" style={{ background: 'var(--pink)' }}>A</div>
-                <div><div className="name">Adaeze O.</div><div className="role">Lagos · Gold tier</div></div>
-              </div>
-            </div>
-            <div className="testimonial-card reveal d2">
-              <svg className="corner-coin" width="40" height="40"><use href="#coin"/></svg>
-              <div className="stars">★★★★★</div>
-              <p className="quote">"Cash out every Friday like clockwork. Pays for my data sub with change to spare. Set-and-forget income."</p>
-              <div className="who">
-                <div className="av" style={{ background: 'var(--lime)' }}>T</div>
-                <div><div className="name">Tunde K.</div><div className="role">Abuja · Platinum tier</div></div>
-              </div>
-            </div>
-            <div className="testimonial-card reveal d3">
-              <svg className="corner-coin" width="40" height="40"><use href="#coin"/></svg>
-              <div className="stars">★★★★★</div>
-              <p className="quote">"Bought my first raffle ticket with Berries last month — and won ₦25,000. Just for answering a few surveys on my lunch break."</p>
-              <div className="who">
-                <div className="av" style={{ background: 'var(--yellow)' }}>C</div>
-                <div><div className="name">Chinedu A.</div><div className="role">PH · Silver tier</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section style={{ paddingBottom: '80px' }}>
         <div className="wrap">
           <div className="cta-card reveal" id="cta">

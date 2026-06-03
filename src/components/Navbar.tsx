@@ -19,7 +19,7 @@ export default function Navbar({ navigate }: { navigate: (page: string, anchor?:
       <div className="nav-links">
         <a href="#" onClick={(e) => { e.preventDefault(); handleNav('home','how'); }}>How it works</a>
         <a href="#" onClick={(e) => { e.preventDefault(); handleNav('home','voices'); }}>Voices</a>
-        <a href="#" onClick={(e) => { e.preventDefault(); handleNav('about'); }}>About</a>
+        <a href="https://www.rivabit.com" target="_blank" rel="noopener noreferrer">About</a>
       </div>
 
       <div className="nav-actions">
@@ -34,7 +34,7 @@ export default function Navbar({ navigate }: { navigate: (page: string, anchor?:
         <div className="mobile-nav-inner">
           <a href="#" onClick={(e) => { e.preventDefault(); handleNav('home','how'); }}>How it works</a>
           <a href="#" onClick={(e) => { e.preventDefault(); handleNav('home','voices'); }}>Voices</a>
-          <a href="#" onClick={(e) => { e.preventDefault(); handleNav('about'); }}>About</a>
+          <a href="https://www.rivabit.com" target="_blank" rel="noopener noreferrer">About</a>
         </div>
       </div>
     </nav>

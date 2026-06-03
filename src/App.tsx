@@ -18,38 +18,6 @@ export default function App() {
   };
 
   useEffect(() => {
-    // Cursor
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursor-ring');
-    let mx = window.innerWidth / 2, my = window.innerHeight / 2;
-    let cx = mx, cy = my, rx = mx, ry = my;
-    let reqId: number;
-
-    const onMouseMove = (e: MouseEvent) => { mx = e.clientX; my = e.clientY; };
-    window.addEventListener('mousemove', onMouseMove);
-
-    const tickCursor = () => {
-      cx += (mx - cx) * 0.4; cy += (my - cy) * 0.4;
-      rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
-      if (cursor) cursor.style.transform = `translate(${cx-7}px, ${cy-7}px)`;
-      if (ring) ring.style.transform = `translate(${rx-18}px, ${ry-18}px)`;
-      reqId = requestAnimationFrame(tickCursor);
-    };
-    tickCursor();
-
-    const onMouseOver = (e: MouseEvent) => {
-      if ((e.target as Element).closest('button, a, .brand-tile, .testimonial-card, .how-card, input[type="range"], .doc-toc a, .legal-content a')) {
-        cursor?.classList.add('big');
-      }
-    };
-    const onMouseOut = (e: MouseEvent) => {
-      if ((e.target as Element).closest('button, a, .brand-tile, .testimonial-card, .how-card, input[type="range"], .doc-toc a, .legal-content a')) {
-        cursor?.classList.remove('big');
-      }
-    };
-    document.addEventListener('mouseover', onMouseOver);
-    document.addEventListener('mouseout', onMouseOut);
-
     const onClick = (e: MouseEvent) => {
       const btn = (e.target as Element).closest('[data-ripple]') as HTMLElement;
       if (!btn) return;
@@ -66,11 +34,7 @@ export default function App() {
     document.addEventListener('click', onClick);
 
     return () => {
-      window.removeEventListener('mousemove', onMouseMove);
-      document.removeEventListener('mouseover', onMouseOver);
-      document.removeEventListener('mouseout', onMouseOut);
       document.removeEventListener('click', onClick);
-      cancelAnimationFrame(reqId);
     };
   }, []);
 
@@ -108,8 +72,6 @@ export default function App() {
 
   return (
     <>
-      <div id="cursor"></div>
-      <div id="cursor-ring"></div>
       <div id="fx-layer"></div>
       <Navbar navigate={navigate} />
       {renderPage()}

@@ -77,10 +77,9 @@ body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  cursor: none;
 }
 a { color: inherit; text-decoration: none; }
-button { font: inherit; color: inherit; background: none; border: 0; cursor: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 ul { list-style: none; }
 img, svg { display: block; max-width: 100%; }
 
@@ -98,24 +97,6 @@ body::before {
 .font-serif { font-family: 'Fraunces', serif; font-weight: 700; letter-spacing: -0.025em; }
 .wrap { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
 @media (max-width: 768px) { .wrap { padding: 0 20px; } }
-
-#cursor {
-  position: fixed; top: 0; left: 0; width: 14px; height: 14px;
-  border-radius: 50%; background: var(--orange);
-  pointer-events: none; z-index: 9999;
-  mix-blend-mode: multiply;
-  transition: width .25s, height .25s, background .25s;
-  will-change: transform;
-}
-#cursor.big { width: 44px; height: 44px; background: var(--orange); opacity: .35; mix-blend-mode: normal; }
-#cursor-ring {
-  position: fixed; top: 0; left: 0; width: 36px; height: 36px;
-  border: 1px solid var(--line-bold); border-radius: 50%;
-  pointer-events: none; z-index: 9998;
-  opacity: .4;
-  will-change: transform;
-}
-@media (hover: none) { #cursor, #cursor-ring { display: none; } body { cursor: auto; } }
 
 nav.topnav {
   position: fixed; top: 0; left: 0; right: 0;
@@ -226,7 +207,7 @@ nav.topnav.scrolled {
   transition: transform .2s ease, box-shadow .25s ease, background .2s, border-color .2s;
   position: relative; overflow: hidden;
   white-space: nowrap;
-  cursor: none;
+  cursor: pointer;
 }
 .btn-primary {
   background: var(--yellow);
@@ -488,7 +469,7 @@ footer { border-top: 1px solid var(--line-strong); padding: 60px 0 36px; backgro
 @media (max-width: 768px) { .contact-form { padding: 24px; border-radius: 16px; } }
 .form-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
 .form-field label { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-.form-field input, .form-field textarea, .form-field select { border: 1px solid var(--line-card-bold); background: var(--paper-white); border-radius: 12px; padding: 14px 16px; font: inherit; color: var(--ink); width: 100%; transition: border-color .2s, background .2s; cursor: none; }
+.form-field input, .form-field textarea, .form-field select { border: 1px solid var(--line-card-bold); background: var(--paper-white); border-radius: 12px; padding: 14px 16px; font: inherit; color: var(--ink); width: 100%; transition: border-color .2s, background .2s; }
 .form-field input:focus, .form-field textarea:focus, .form-field select:focus { outline: none; border-color: var(--indigo); background: var(--paper); box-shadow: 0 0 0 4px rgba(84,64,255,0.1); }
 .form-field textarea { min-height: 130px; resize: vertical; font-family: inherit; }
 .contact-side { display: flex; flex-direction: column; gap: 16px; }
@@ -543,7 +524,7 @@ footer { border-top: 1px solid var(--line-strong); padding: 60px 0 36px; backgro
 .slider-box .amt { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 700; color: var(--indigo); letter-spacing: -0.02em; }
 .slider-box span { font-weight: 600; font-size: 14px; color: var(--muted); }
 .range { -webkit-appearance: none; width: 100%; height: 8px; background: var(--line-card-bold); border-radius: 8px; margin: 32px 0; outline: none; }
-.range::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; border-radius: 50%; background: var(--yellow); border: 2px solid var(--indigo); cursor: none; box-shadow: var(--shadow-sm); transition: transform 0.1s; }
+.range::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; border-radius: 50%; background: var(--yellow); border: 2px solid var(--indigo); cursor: pointer; box-shadow: var(--shadow-sm); transition: transform 0.1s; }
 .range::-webkit-slider-thumb:hover { transform: scale(1.1); }
 .slider-val-big { font-family: 'Fraunces', serif; font-weight: 700; font-size: 42px; line-height: 1; letter-spacing: -0.035em; color: var(--indigo); margin-bottom: 6px; }
 

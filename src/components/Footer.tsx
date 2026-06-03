@@ -27,7 +27,7 @@ export default function Footer({ navigate }: { navigate: (page: string, anchor?:
           <div className="footer-col">
             <h6>Company</h6>
             <ul>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('about'); }}>About Rivabit</a></li>
+              <li><a href="https://www.rivabit.com" target="_blank" rel="noopener noreferrer">About Rivabit</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('contact'); }}>Contact</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('privacy'); }}>Privacy</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); navigate('terms'); }}>Terms</a></li>
